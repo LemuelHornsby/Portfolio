@@ -1,70 +1,78 @@
 # Hybrid DRL + NMPC for Safe Autonomous Yacht Docking
 
-Thesis project on autonomous docking of a 40 m yacht in confined marina waters using a hybrid controller:
+## Executive Summary
 
-- NMPC for structured tracking and safety.
-- PPO-based DRL for avoidance and recovery maneuvers.
-- A supervisor that switches between both layers in real time.
+This project delivers an end-to-end autonomous docking solution for a 40 m yacht operating in confined marina waters. The core innovation is a hybrid control stack that combines:
 
-## Highlights
+- A nonlinear model predictive controller (NMPC) for structured, constraint-aware guidance.
+- A deep reinforcement learning policy (PPO) for agile obstacle avoidance and recovery.
+- A supervisory layer that dynamically chooses the safer control mode in real time.
 
-- Built a 3-DOF MMG yacht model and validated maneuvering behavior against ABS guidance.
-- Developed a Unity co-simulation environment with TCP Python-Unity communication and static/dynamic obstacles.
-- Designed a nonlinear MPC with throttle, rudder, and bow-thruster control inputs.
-- Trained a PPO policy for avoid/recover phases with robust reward shaping.
+The result is a practical autonomy framework designed for high-risk, low-speed maneuvers where safety and reliability matter most.
 
-## Results
+## Business Impact
 
-| Metric | Baseline | Final |
+- Risk reduction in high-consequence docking operations through collision-free and timeout-free policy behavior.
+- Improved operational confidence via interpretable supervision between optimization-based and learning-based control.
+- Strong platform value for maritime autonomy R&D, training, and digital validation before real-world deployment.
+- Reusable simulation and control architecture that supports extension toward hardware-in-the-loop and commercial autonomy workflows.
+
+## Development Story
+
+The system was developed as a full-stack autonomy pipeline, from vessel physics to intelligent decision-making:
+
+1. A physics-based 3-DOF MMG maneuvering model was built for a 40 m yacht and tuned against maneuverability guidance.
+2. An NMPC controller was designed to handle trajectory tracking with actuator-aware control of throttle, rudder, and bow thruster.
+3. A PPO agent was trained in a structured avoid and recover task with reward shaping for safe behavior near obstacles.
+4. A hybrid supervisor was implemented to hand over control between NMPC and DRL based on risk and phase progression.
+
+This development approach produced a controller that is both robust and explainable in congested docking scenarios.
+
+## Unity Digital Twin and Co-Simulation
+
+Unity was used as the interactive maritime digital twin for scenario realism and visual validation:
+
+- Marina scene with docking goals, confinement boundaries, and static or dynamic obstacles.
+- Real-time TCP communication between Python control logic and Unity visualization.
+- Continuous state streaming and command playback for live trajectory monitoring.
+- Environment-level evidence generation for thesis reporting and performance analysis.
+
+This bridge made it possible to test control decisions in realistic operational contexts, not just offline numerical simulation.
+
+## Quantified Outcomes
+
+| KPI | Baseline | Final |
 |---|---:|---:|
-| Timeout rate (training) | 50% | 0% |
-| Collision rate (baseline RL) | 60% | 0% |
-| Obstacle-avoidance success (DRL eval) | - | 100% |
+| Timeout rate during training | 50% | 0% |
+| Collision rate of baseline RL | 60% | 0% |
+| Obstacle-avoidance success (DRL evaluation) | - | 100% |
 
-Additional evaluation evidence:
+Additional evaluation outcomes:
 
-- DRL evaluation (300 episodes): success 100%, collision 0%, timeout 0%.
-- Avoid reached 100%, recover reached 100%.
-- Avg steps: 934, P95: 996.
+- 300-episode DRL evaluation: success 100%, collision 0%, timeout 0%.
+- Avoid phase reached 100%, recover phase reached 100%.
+- Average steps 934, P95 996, showing consistent completion.
 
-## Architecture
+## System View
 
 ```mermaid
 flowchart LR
-    U[Unity Marina + Obstacles] <--> T[TCP 127.0.0.1:5005]
-    T <--> P[Python Simulation Loop]
-    P --> M[MMG 3-DOF Plant]
-    P --> N[NMPC Controller]
-    P --> R[PPO Policy]
+    U[Unity Marina Digital Twin] <--> T[TCP Co-Simulation Link]
+    T <--> P[Python Simulation and Control Loop]
+    P --> M[MMG Vessel Dynamics]
+    P --> N[NMPC Layer]
+    P --> R[DRL Layer PPO]
     N --> S[Hybrid Supervisor]
     R --> S
-    S --> C[Throttle, Rudder, Bow Thruster]
+    S --> C[Commanded Throttle Rudder Thruster]
     C --> M
-```
-
-## Main Files
-
-- Vessel dynamics: `mmg_setup_yacht.py`, `mmg_setup_yacht_bowthruster.py`, `simulate_yacht_mmg_bowthruster.py`
-- NMPC: `casadi_yacht_model.py`, `nmpc_casadi_yacht.py`, `unity_nmpc_casadi.py`
-- DRL: `drl_avoid_env.py`, `train_drl_avoid.py`, `evaluate_drl_avoid.py`
-- Hybrid controller: `run_hybrid_supervisor.py`
-- Unity bridge: `PythonTCPReceiver.cs`, `YachtPoseApplier.cs`
-
-## Quick Run
-
-```bash
-python train_drl_avoid.py --model-dir models/hybrid_strict_2m --timesteps 2000000
-python evaluate_drl_avoid.py --model-dir models/hybrid_strict_2m
-python run_hybrid_supervisor.py --model-dir models/hybrid_strict_2m
-python analyze_hybrid_runtime.py --csv logs/hybrid_runtime_latest.csv --report-json logs/hybrid_runtime_latest_summary.json
-python plot_hybrid_trajectory.py --runtime-csv logs/hybrid_runtime_latest.csv --output plots/hybrid_trajectory_latest.png
 ```
 
 ## Evidence
 
-- Presentation: `Lemuel_Hornsby_Odoi_Final.pptx`
-- Runtime logs: `logs/hybrid_runtime_latest.csv`, `logs/hybrid_runtime_latest_summary.json`
-- Trained models and evaluations: `models/`
+- Thesis presentation and defense material.
+- Runtime logs and summarized performance reports.
+- Trained models and evaluation artifacts from hybrid validation runs.
 
 ## Author
 
