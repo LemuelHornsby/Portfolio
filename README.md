@@ -114,4 +114,4 @@ This repo contains work across multiple languages and engineering environments, 
 Marine Engineer — Autonomous Marine Systems • Maneuvering & Control • Digital Twins  
 MSc Thesis Project work documented in this portfolio (April 2026)
 
-> If you’d like, tell me what contact links you want shown here (LinkedIn, email, personal site), and I’ll format them in the same naval-themed style.
+> www.linkedin.com/in/lemuel-hornsby-odoi-8a8072348
