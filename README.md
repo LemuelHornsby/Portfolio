@@ -93,6 +93,10 @@ A process and reporting focused project on machining with error detection / lean
 This repo contains work across multiple languages and engineering environments, including:
 - **Python** (simulation, optimization/constraint models, control/ML pipelines)
 - **C / C#** (systems-level + tooling environments)
+- **Unity 3D** (marine 3D environments)
+- **Blender** (design environment)
+- **Flexim** (process and operations modeling)
+- **Simcenter Amesim** (mechanical engineering modeling)
 - Plus supporting documents and artifacts (PDF/PPTX/media)
 
 ---
