@@ -1,0 +1,21 @@
+<MODEL_INFO
+NUM_STATES 4
+NUM_DISCRETE_STATES 11
+IS_EXPLICIT 0
+NUM_IMPLICIT 1
+NUM_IMPLICIT_GENERATED 1
+INTERFACE "System contains FMI interface"
+>MODEL_INFO
+# In the model input/output sections below are listed
+# the "external name", "data paths" and "start values" for the variables.
+<MODEL_OUTPUT
+NUM_OUTPUT 3
+OUTPUT 1 ; "flow_rate" ; "flow_rate@amesim_interface"
+OUTPUT 2 ; "pressure_increase" ; "pressure_increase@amesim_interface"
+OUTPUT 3 ; "mech_power" ; "mech_power@amesim_interface"
+>MODEL_OUTPUT
+<MODEL_INPUT
+NUM_INPUT 2
+INPUT 1 ; "pump_speed" ; "pump_speed@amesim_interface" ; "0.00000000000000e+00"
+INPUT 2 ; "flowrate_target" ; "flowrate_target@amesim_interface" ; "0.00000000000000e+00"
+>MODEL_INPUT

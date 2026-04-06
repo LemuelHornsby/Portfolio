@@ -1,0 +1,5 @@
+TFPUC0 instance 1 pressure at port 2 [barA] Data_Path=p2@tf_centrif_pump_1
+TFPUC0 instance 1 temperature at port 2 [degC] Data_Path=t2@tf_centrif_pump_1
+CTRPID0 instance 1 integral part [] Data_Path=ipart@pidtune
+CTRPID0 instance 1 internal state for derivative estimate [] Data_Path=w@pidtune
+CTRPID0 instance 1 pid output at port 2 [] Data_Path=v@pidtune

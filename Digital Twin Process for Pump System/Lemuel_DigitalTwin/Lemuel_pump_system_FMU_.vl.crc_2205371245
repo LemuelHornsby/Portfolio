@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VL DOC_VERSION="1" VersionId="20241.." checksum="2205371245">
+ <VARS_LIST>
+  <VAR CIRCUIT_SCOPE_ID="555" Data_Path="volume@elementaryhydraulicprops" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFFD3_PURE_WATER" TITLE="volume of fluid" UNITS="L" VARNUM="1"/>
+  <VAR CIRCUIT_SCOPE_ID="556" Data_Path="mass@elementaryhydraulicprops" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFFD3_PURE_WATER" TITLE="mass of fluid" UNITS="kg" VARNUM="2"/>
+  <VAR CIRCUIT_SCOPE_ID="1166" Data_Path="dm3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of mass flow rate at port 1" UNITS="kg/s" VARNUM="3">
+   <TIE_VAR CIRCUIT_SCOPE_ID="875" Data_Path="dm1@tank01_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFTK0" TITLE="mass flow rate at port 1" UNITS="kg/s" VARNUM="3" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1167" Data_Path="dmh3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of enthalpy flow rate at port 1" UNITS="W" VARNUM="4">
+   <TIE_VAR CIRCUIT_SCOPE_ID="876" Data_Path="dmh1@tank01_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFTK0" TITLE="enthalpy flow rate at port 1" UNITS="W" VARNUM="4" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1168" Data_Path="vol3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of volume at port 1" UNITS="cm**3" VARNUM="5"/>
+  <VAR CIRCUIT_SCOPE_ID="1169" Data_Path="dvol3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of derivative of volume at port 1" UNITS="L/min" VARNUM="6"/>
+  <VAR CIRCUIT_SCOPE_ID="1170" Data_Path="flowid3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of flow index at port 1" UNITS="tfflow" VARNUM="7"/>
+  <VAR CIRCUIT_SCOPE_ID="872" Data_Path="p1@tank01_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFTK0" TITLE="tank pressure" UNITS="barA" VARNUM="8" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1171" Data_Path="p3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="pressure at port 3" UNITS="barA" VARNUM="8" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="873" Data_Path="t1@tank01_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFTK0" TITLE="tank temperature" UNITS="degC" VARNUM="9" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1172" Data_Path="t3@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="temperature at port 3" UNITS="degC" VARNUM="9" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="874" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="869" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="956" Data_Path="dm1@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="mass flow rate at port 1" UNITS="kg/s" VARNUM="12">
+   <TIE_VAR CIRCUIT_SCOPE_ID="892" Data_Path="dm1@tank01_3" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="TFTK0" TITLE="mass flow rate at port 1" UNITS="kg/s" VARNUM="12" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="957" Data_Path="dmh1@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="enthalpy flow rate at port 1" UNITS="W" VARNUM="13">
+   <TIE_VAR CIRCUIT_SCOPE_ID="893" Data_Path="dmh1@tank01_3" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="TFTK0" TITLE="enthalpy flow rate at port 1" UNITS="W" VARNUM="13" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="958" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="959" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="960" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="889" Data_Path="p1@tank01_3" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="TFTK0" TITLE="tank pressure" UNITS="barA" VARNUM="17" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="961" Data_Path="p1@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="pressure at port 1" UNITS="barA" VARNUM="17" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="890" Data_Path="t1@tank01_3" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="TFTK0" TITLE="tank temperature" UNITS="degC" VARNUM="18" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="962" Data_Path="t1@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="temperature at port 1" UNITS="degC" VARNUM="18" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="891" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="886" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="1008" Data_Path="output@piecewiselinear_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="UD00" TITLE="user defined duty cycle output" UNITS="null" VARNUM="21">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1801" Data_Path="sink@signalsink" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="SSINK" TITLE="signal input" UNITS="null" VARNUM="21" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1315" Data_Path="v@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="pid output at port 2" UNITS="null" VARNUM="22">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1052" Data_Path="input@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="input signal" UNITS="null" VARNUM="22" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1157" Data_Path="p1@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of pressure at port 3" UNITS="barA" VARNUM="23">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1058" Data_Path="p2@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="pressure at port 2" UNITS="barA" VARNUM="23" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1158" Data_Path="t1@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of temperature at port 3" UNITS="degC" VARNUM="24">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1059" Data_Path="t2@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="temperature at port 2" UNITS="degC" VARNUM="24" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1159" Data_Path="nodeid1@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="duplicate of node index at port 3" UNITS="tfnode" VARNUM="25"/>
+  <VAR CIRCUIT_SCOPE_ID="1053" Data_Path="dm2@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="mass flow rate at port 2" UNITS="kg/s" VARNUM="26">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1160" Data_Path="dm1@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="mass flow rate at port 1" UNITS="kg/s" VARNUM="26" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1054" Data_Path="dmh2@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="enthalpy flow rate at port 2" UNITS="W" VARNUM="27">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1161" Data_Path="dmh1@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="enthalpy flow rate at port 1" UNITS="W" VARNUM="27" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1055" HIDDEN="1" SAVE_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1162" Data_Path="vol@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="volume at port 1" UNITS="cm**3" VARNUM="28" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1056" HIDDEN="1" SAVE_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1163" Data_Path="dvol@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="derivative of volume at port 1" UNITS="L/min" VARNUM="29" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1057" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="964" Data_Path="p2@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="pressure at port 2" UNITS="barA" VARNUM="31" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1066" Data_Path="p3@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="pressure at port 3" UNITS="barA" VARNUM="31" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="965" Data_Path="t2@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="temperature at port 2" UNITS="degC" VARNUM="32" VAR_HASSTART_VALUE="1">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1067" Data_Path="t3@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="temperature at port 3" UNITS="degC" VARNUM="32" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="966" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1061" Data_Path="dm3@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="sign reversed duplicate of mass flow rate at port 2" UNITS="kg/s" VARNUM="34">
+   <TIE_VAR CIRCUIT_SCOPE_ID="967" Data_Path="dm2@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="mass flow rate at port 2" UNITS="kg/s" VARNUM="34" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1062" Data_Path="dmh3@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="sign reversed duplicate of enthalpy flow rate at port 2" UNITS="W" VARNUM="35">
+   <TIE_VAR CIRCUIT_SCOPE_ID="968" Data_Path="dmh2@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="enthalpy flow rate at port 2" UNITS="W" VARNUM="35" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1063" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1064" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1065" HIDDEN="1" SAVE_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1036" Data_Path="cq@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="flow coefficient (Cq)" UNITS="null" VARNUM="39"/>
+  <VAR CIRCUIT_SCOPE_ID="1037" Data_Path="zeta@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="singular pressure drop coefficient (zeta)" UNITS="null" VARNUM="40"/>
+  <VAR CIRCUIT_SCOPE_ID="1038" Data_Path="cv@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="flow coefficient (Cv)" UNITS="null" VARNUM="41"/>
+  <VAR CIRCUIT_SCOPE_ID="1039" Data_Path="kv@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="flow coefficient (Kv)" UNITS="null" VARNUM="42"/>
+  <VAR CIRCUIT_SCOPE_ID="1040" Data_Path="lambda@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="flow number (lambda)" UNITS="null" VARNUM="43"/>
+  <VAR CIRCUIT_SCOPE_ID="1041" Data_Path="re@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="Reynolds number" UNITS="null" VARNUM="44"/>
+  <VAR CIRCUIT_SCOPE_ID="1042" Data_Path="flv@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="mean fluid velocity" UNITS="m/s" VARNUM="45"/>
+  <VAR CIRCUIT_SCOPE_ID="1043" Data_Path="marea@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="cross-sectional area" UNITS="mm**2" VARNUM="46"/>
+  <VAR CIRCUIT_SCOPE_ID="1044" Data_Path="mhdiam@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="hydraulic diameter" UNITS="mm" VARNUM="47"/>
+  <VAR CIRCUIT_SCOPE_ID="1045" Data_Path="deltap@variableorifice_1" IS_DELTA="1" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="pressure drop (p3 - p2)" UNITS="bar" VARNUM="48"/>
+  <VAR CIRCUIT_SCOPE_ID="1046" Data_Path="tjet@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="jet temperature" UNITS="degC" VARNUM="49"/>
+  <VAR CIRCUIT_SCOPE_ID="1047" Data_Path="q2@variableorifice_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVORF0" TITLE="volumetric flow rate at port 2" UNITS="L/min" VARNUM="50"/>
+  <VAR CIRCUIT_SCOPE_ID="1049" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="1165" Data_Path="outv@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="output flow rate signal" UNITS="null" VARNUM="52">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1314" Data_Path="y@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="plant value at port 1" UNITS="null" VARNUM="52" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1155" Data_Path="qv@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="volumetric flow rate" UNITS="L/min" VARNUM="53"/>
+  <VAR CIRCUIT_SCOPE_ID="1156" Data_Path="rho@flowratesensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFVF000" TITLE="fluid density" UNITS="kg/m**3" VARNUM="54"/>
+  <VAR CIRCUIT_SCOPE_ID="2815" Data_Path="output@dynamic_receiver_5" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="SIGRECEI0" TITLE="receiver output" UNITS="null" VARNUM="55">
+   <TIE_VAR CIRCUIT_SCOPE_ID="1316" Data_Path="cmd@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="control setpoint at port 3" UNITS="null" VARNUM="55" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1298" Data_Path="u@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="control error (= setpoint - actual)" UNITS="null" VARNUM="56"/>
+  <VAR CIRCUIT_SCOPE_ID="1299" Data_Path="du@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="control error derivative" UNITS="1/s" VARNUM="57"/>
+  <VAR CIRCUIT_SCOPE_ID="1300" Data_Path="ppart@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="proportional part" UNITS="null" VARNUM="58"/>
+  <VAR CIRCUIT_SCOPE_ID="1301" Data_Path="ipart@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="integral part" UNITS="null" VARNUM="59" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1302" Data_Path="dpart@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="derivative part" UNITS="null" VARNUM="60"/>
+  <VAR CIRCUIT_SCOPE_ID="1303" Data_Path="w@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="internal state for derivative estimate" UNITS="null" VARNUM="61" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1304" Data_Path="antiwind0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="anti windup method - Linked variable" UNITS="null" VARNUM="62" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1305" Data_Path="Kp0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="proportional gain - Linked variable" UNITS="null" VARNUM="63" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1306" Data_Path="Ki0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="integral gain - Linked variable" UNITS="null" VARNUM="64" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1307" Data_Path="Kd0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="derivative gain - Linked variable" UNITS="null" VARNUM="65" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1308" Data_Path="tau0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="time constant for derivative estimate - Linked variable" UNITS="s" VARNUM="66" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1309" Data_Path="outmin0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="minimum permitted output value - Linked variable" UNITS="null" VARNUM="67" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1310" Data_Path="outmax0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="maximum permitted output value - Linked variable" UNITS="null" VARNUM="68" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1311" Data_Path="Ks0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="backtracking gain - Linked variable" UNITS="null" VARNUM="69" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1312" Data_Path="hyst0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="hysteresis - Linked variable" UNITS="null" VARNUM="70" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1313" Data_Path="outlim0GEN@pidtune" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CTRPID0" TITLE="limit output - Linked variable" UNITS="null" VARNUM="71" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="1799" Data_Path="out@constant" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CONS00" TITLE="output" UNITS="null" VARNUM="72">
+   <TIE_VAR CIRCUIT_SCOPE_ID="3026" Data_Path="sink@signalsink_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="SSINK" TITLE="signal input" UNITS="null" VARNUM="72" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="1798" Data_Path="k0GEN@constant" IS_DELTA="0" IS_LINKED_VARIABLE="1" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="CONS00" TITLE="constant value - Linked variable" UNITS="null" VARNUM="73" VAR_HASSTART_VALUE="1"/>
+  <VAR CIRCUIT_SCOPE_ID="2963" Data_Path="transout@dynamic_transmitter_5" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="4" Submodel_Name="SIGTRANS0" TITLE="transmitter output" UNITS="null" VARNUM="74">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2816" Data_Path="input@dynamic_receiver_5" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="SIGRECEI0" TITLE="receiver input" UNITS="null" VARNUM="74" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2820" Data_Path="output@dynamic_receiver_6" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="SIGRECEI0" TITLE="receiver output" UNITS="null" VARNUM="75">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2824" Data_Path="input@pmover01v_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="PMV00" TITLE="signal input" UNITS="null" VARNUM="75" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2968" Data_Path="transout@dynamic_transmitter_6" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="5" Submodel_Name="SIGTRANS0" TITLE="transmitter output" UNITS="null" VARNUM="76">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2821" Data_Path="input@dynamic_receiver_6" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="SIGRECEI0" TITLE="receiver input" UNITS="null" VARNUM="76" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="972" Data_Path="TShaft@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="shaft torque" UNITS="Nm" VARNUM="77"/>
+  <VAR CIRCUIT_SCOPE_ID="2823" Data_Path="omega@pmover01v_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="PMV00" TITLE="rotary speed output" UNITS="rev/min" VARNUM="78">
+   <TIE_VAR CIRCUIT_SCOPE_ID="973" Data_Path="nmot@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="pump rotary speed" UNITS="rev/min" VARNUM="78" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2827" Data_Path="transout@dynamic_transmitter_7" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="SIGTRANS0" TITLE="transmitter output" UNITS="null" VARNUM="79">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2974" Data_Path="input@dynamic_receiver_7" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="SIGRECEI0" TITLE="receiver input" UNITS="null" VARNUM="79" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="3032" Data_Path="output@tf_centrif_pump_1.intvarsensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="INTVARSENSOR0" TITLE="volumetric flow rate" UNITS="null" VARNUM="80">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2828" Data_Path="transin@dynamic_transmitter_7" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="SIGTRANS0" TITLE="transmitter input" UNITS="null" VARNUM="80" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2832" Data_Path="transout@dynamic_transmitter_8" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="SIGTRANS0" TITLE="transmitter output" UNITS="null" VARNUM="81">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2979" Data_Path="input@dynamic_receiver_8" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="4" Submodel_Name="SIGRECEI0" TITLE="receiver input" UNITS="null" VARNUM="81" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="3035" Data_Path="output@tf_centrif_pump_1.intvarsensor_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="INTVARSENSOR0" TITLE="pressure increase" UNITS="null" VARNUM="82">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2833" Data_Path="transin@dynamic_transmitter_8" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="SIGTRANS0" TITLE="transmitter input" UNITS="null" VARNUM="82" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2837" Data_Path="transout@dynamic_transmitter_9" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="SIGTRANS0" TITLE="transmitter output" UNITS="null" VARNUM="83">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2984" Data_Path="input@dynamic_receiver_9" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="5" Submodel_Name="SIGRECEI0" TITLE="receiver input" UNITS="null" VARNUM="83" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="3038" Data_Path="output@tf_centrif_pump_1.intvarsensor_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="INTVARSENSOR0" TITLE="mechanical power" UNITS="null" VARNUM="84">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2838" Data_Path="transin@dynamic_transmitter_9" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="SIGTRANS0" TITLE="transmitter input" UNITS="null" VARNUM="84" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2987" Data_Path="flowrate_target@amesim_interface" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="AMESIM_INTERFACE" TITLE="flowrate_target" UNITS="null" VARNUM="85">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2964" Data_Path="transin@dynamic_transmitter_5" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="4" Submodel_Name="SIGTRANS0" TITLE="transmitter input" UNITS="null" VARNUM="85" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2986" Data_Path="pump_speed@amesim_interface" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="AMESIM_INTERFACE" TITLE="pump_speed" UNITS="null" VARNUM="86">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2969" Data_Path="transin@dynamic_transmitter_6" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="5" Submodel_Name="SIGTRANS0" TITLE="transmitter input" UNITS="null" VARNUM="86" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2973" Data_Path="output@dynamic_receiver_7" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="SIGRECEI0" TITLE="receiver output" UNITS="null" VARNUM="87">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2988" Data_Path="flow_rate@amesim_interface" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="AMESIM_INTERFACE" TITLE="flow_rate" UNITS="null" VARNUM="87" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2978" Data_Path="output@dynamic_receiver_8" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="4" Submodel_Name="SIGRECEI0" TITLE="receiver output" UNITS="null" VARNUM="88">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2989" Data_Path="pressure_increase@amesim_interface" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="AMESIM_INTERFACE" TITLE="pressure_increase" UNITS="null" VARNUM="88" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="2983" Data_Path="output@dynamic_receiver_9" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="5" Submodel_Name="SIGRECEI0" TITLE="receiver output" UNITS="null" VARNUM="89">
+   <TIE_VAR CIRCUIT_SCOPE_ID="2990" Data_Path="mech_power@amesim_interface" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="AMESIM_INTERFACE" TITLE="mech_power" UNITS="null" VARNUM="89" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="939" Data_Path="q2@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="volumetric flow rate" UNITS="L/min" VARNUM="90">
+   <TIE_VAR CIRCUIT_SCOPE_ID="3033" Data_Path="sensedvar@tf_centrif_pump_1.intvarsensor" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="INTVARSENSOR0" TITLE="Sensed variable" UNITS="null" VARNUM="90" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="940" Data_Path="rhoref@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="reference density" UNITS="kg/m**3" VARNUM="91"/>
+  <VAR CIRCUIT_SCOPE_ID="941" Data_Path="dP@tf_centrif_pump_1" IS_DELTA="1" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="pressure increase" UNITS="bar" VARNUM="92">
+   <TIE_VAR CIRCUIT_SCOPE_ID="3036" Data_Path="sensedvar@tf_centrif_pump_1.intvarsensor_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="2" Submodel_Name="INTVARSENSOR0" TITLE="Sensed variable" UNITS="null" VARNUM="92" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="942" Data_Path="pmech@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="mechanical power" UNITS="W" VARNUM="93">
+   <TIE_VAR CIRCUIT_SCOPE_ID="3039" Data_Path="sensedvar@tf_centrif_pump_1.intvarsensor_2" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="3" Submodel_Name="INTVARSENSOR0" TITLE="Sensed variable" UNITS="null" VARNUM="93" VAR_DIM="1"/>
+  </VAR>
+  <VAR CIRCUIT_SCOPE_ID="943" Data_Path="feff@tf_centrif_pump_1" IS_DELTA="0" IS_LINKED_VARIABLE="0" SAVE_VALUE="1" Submodel_Instance="1" Submodel_Name="TFPUC0_SENSED" TITLE="global efficiency" UNITS="null" VARNUM="94"/>
+  <VAR CIRCUIT_SCOPE_ID="950" HIDDEN="1" SAVE_VALUE="0"/>
+  <VAR CIRCUIT_SCOPE_ID="953" HIDDEN="1" SAVE_VALUE="0"/>
+ </VARS_LIST>
+</VL>

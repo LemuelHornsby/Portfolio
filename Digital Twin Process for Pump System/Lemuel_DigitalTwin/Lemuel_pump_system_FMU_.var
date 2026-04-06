@@ -1,0 +1,96 @@
+TFFD3_PURE_WATER instance 1 volume of fluid [L] Data_Path=volume@elementaryhydraulicprops
+TFFD3_PURE_WATER instance 1 mass of fluid [kg] Data_Path=mass@elementaryhydraulicprops
+TFVF000 instance 1 duplicate of mass flow rate at port 1 [kg/s] Data_Path=dm3@flowratesensor
+TFVF000 instance 1 duplicate of enthalpy flow rate at port 1 [W] Data_Path=dmh3@flowratesensor
+TFVF000 instance 1 duplicate of volume at port 1 [cm**3] Data_Path=vol3@flowratesensor
+TFVF000 instance 1 duplicate of derivative of volume at port 1 [L/min] Data_Path=dvol3@flowratesensor
+TFVF000 instance 1 duplicate of flow index at port 1 [tfflow] Data_Path=flowid3@flowratesensor
+TFTK0 instance 1 tank pressure [barA] Data_Path=p1@tank01_2
+TFTK0 instance 1 tank temperature [degC] Data_Path=t1@tank01_2
+HIDDEN
+HIDDEN
+TFPUC0_SENSED instance 1 mass flow rate at port 1 [kg/s] Data_Path=dm1@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 enthalpy flow rate at port 1 [W] Data_Path=dmh1@tf_centrif_pump_1
+HIDDEN
+HIDDEN
+HIDDEN
+TFTK0 instance 2 tank pressure [barA] Data_Path=p1@tank01_3
+TFTK0 instance 2 tank temperature [degC] Data_Path=t1@tank01_3
+HIDDEN
+HIDDEN
+UD00 instance 1 user defined duty cycle output Data_Path=output@piecewiselinear_2
+CTRPID0 instance 1 pid output at port 2 Data_Path=v@pidtune
+TFVF000 instance 1 duplicate of pressure at port 3 [barA] Data_Path=p1@flowratesensor
+TFVF000 instance 1 duplicate of temperature at port 3 [degC] Data_Path=t1@flowratesensor
+TFVF000 instance 1 duplicate of node index at port 3 [tfnode] Data_Path=nodeid1@flowratesensor
+TFVORF0 instance 1 mass flow rate at port 2 [kg/s] Data_Path=dm2@variableorifice_1
+TFVORF0 instance 1 enthalpy flow rate at port 2 [W] Data_Path=dmh2@variableorifice_1
+HIDDEN
+HIDDEN
+HIDDEN
+TFPUC0_SENSED instance 1 pressure at port 2 [barA] Data_Path=p2@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 temperature at port 2 [degC] Data_Path=t2@tf_centrif_pump_1
+HIDDEN
+TFVORF0 instance 1 sign reversed duplicate of mass flow rate at port 2 [kg/s] Data_Path=dm3@variableorifice_1
+TFVORF0 instance 1 sign reversed duplicate of enthalpy flow rate at port 2 [W] Data_Path=dmh3@variableorifice_1
+HIDDEN
+HIDDEN
+HIDDEN
+TFVORF0 instance 1 flow coefficient (Cq) Data_Path=cq@variableorifice_1
+TFVORF0 instance 1 singular pressure drop coefficient (zeta) Data_Path=zeta@variableorifice_1
+TFVORF0 instance 1 flow coefficient (Cv) Data_Path=cv@variableorifice_1
+TFVORF0 instance 1 flow coefficient (Kv) Data_Path=kv@variableorifice_1
+TFVORF0 instance 1 flow number (lambda) Data_Path=lambda@variableorifice_1
+TFVORF0 instance 1 Reynolds number Data_Path=re@variableorifice_1
+TFVORF0 instance 1 mean fluid velocity [m/s] Data_Path=flv@variableorifice_1
+TFVORF0 instance 1 cross-sectional area [mm**2] Data_Path=marea@variableorifice_1
+TFVORF0 instance 1 hydraulic diameter [mm] Data_Path=mhdiam@variableorifice_1
+TFVORF0 instance 1 pressure drop (p3 - p2) [bar] Data_Path=deltap@variableorifice_1
+TFVORF0 instance 1 jet temperature [degC] Data_Path=tjet@variableorifice_1
+TFVORF0 instance 1 volumetric flow rate at port 2 [L/min] Data_Path=q2@variableorifice_1
+HIDDEN
+TFVF000 instance 1 output flow rate signal Data_Path=outv@flowratesensor
+TFVF000 instance 1 volumetric flow rate [L/min] Data_Path=qv@flowratesensor
+TFVF000 instance 1 fluid density [kg/m**3] Data_Path=rho@flowratesensor
+SIGRECEI0 instance 1 receiver output Data_Path=output@dynamic_receiver_5
+CTRPID0 instance 1 control error (= setpoint - actual) Data_Path=u@pidtune
+CTRPID0 instance 1 control error derivative [1/s] Data_Path=du@pidtune
+CTRPID0 instance 1 proportional part Data_Path=ppart@pidtune
+CTRPID0 instance 1 integral part Data_Path=ipart@pidtune
+CTRPID0 instance 1 derivative part Data_Path=dpart@pidtune
+CTRPID0 instance 1 internal state for derivative estimate Data_Path=w@pidtune
+CTRPID0 instance 1 anti windup method - Linked variable Is_Linked_Variable=1 Data_Path=antiwind0GEN@pidtune
+CTRPID0 instance 1 proportional gain - Linked variable Is_Linked_Variable=1 Data_Path=Kp0GEN@pidtune
+CTRPID0 instance 1 integral gain - Linked variable Is_Linked_Variable=1 Data_Path=Ki0GEN@pidtune
+CTRPID0 instance 1 derivative gain - Linked variable Is_Linked_Variable=1 Data_Path=Kd0GEN@pidtune
+CTRPID0 instance 1 time constant for derivative estimate - Linked variable [s] Is_Linked_Variable=1 Data_Path=tau0GEN@pidtune
+CTRPID0 instance 1 minimum permitted output value - Linked variable Is_Linked_Variable=1 Data_Path=outmin0GEN@pidtune
+CTRPID0 instance 1 maximum permitted output value - Linked variable Is_Linked_Variable=1 Data_Path=outmax0GEN@pidtune
+CTRPID0 instance 1 backtracking gain - Linked variable Is_Linked_Variable=1 Data_Path=Ks0GEN@pidtune
+CTRPID0 instance 1 hysteresis - Linked variable Is_Linked_Variable=1 Data_Path=hyst0GEN@pidtune
+CTRPID0 instance 1 limit output - Linked variable Is_Linked_Variable=1 Data_Path=outlim0GEN@pidtune
+CONS00 instance 1 output Data_Path=out@constant
+CONS00 instance 1 constant value - Linked variable Is_Linked_Variable=1 Data_Path=k0GEN@constant
+SIGTRANS0 instance 4 transmitter output Data_Path=transout@dynamic_transmitter_5
+SIGRECEI0 instance 2 receiver output Data_Path=output@dynamic_receiver_6
+SIGTRANS0 instance 5 transmitter output Data_Path=transout@dynamic_transmitter_6
+TFPUC0_SENSED instance 1 shaft torque [Nm] Data_Path=TShaft@tf_centrif_pump_1
+PMV00 instance 1 rotary speed output [rev/min] Data_Path=omega@pmover01v_1
+SIGTRANS0 instance 1 transmitter output Data_Path=transout@dynamic_transmitter_7
+INTVARSENSOR0 instance 1 volumetric flow rate Data_Path=output@tf_centrif_pump_1.intvarsensor
+SIGTRANS0 instance 2 transmitter output Data_Path=transout@dynamic_transmitter_8
+INTVARSENSOR0 instance 2 pressure increase Data_Path=output@tf_centrif_pump_1.intvarsensor_1
+SIGTRANS0 instance 3 transmitter output Data_Path=transout@dynamic_transmitter_9
+INTVARSENSOR0 instance 3 mechanical power Data_Path=output@tf_centrif_pump_1.intvarsensor_2
+AMESIM_INTERFACE instance 1 flowrate_target Data_Path=flowrate_target@amesim_interface
+AMESIM_INTERFACE instance 1 pump_speed Data_Path=pump_speed@amesim_interface
+SIGRECEI0 instance 3 receiver output Data_Path=output@dynamic_receiver_7
+SIGRECEI0 instance 4 receiver output Data_Path=output@dynamic_receiver_8
+SIGRECEI0 instance 5 receiver output Data_Path=output@dynamic_receiver_9
+TFPUC0_SENSED instance 1 volumetric flow rate [L/min] Data_Path=q2@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 reference density [kg/m**3] Data_Path=rhoref@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 pressure increase [bar] Data_Path=dP@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 mechanical power [W] Data_Path=pmech@tf_centrif_pump_1
+TFPUC0_SENSED instance 1 global efficiency Data_Path=feff@tf_centrif_pump_1
+HIDDEN
+HIDDEN

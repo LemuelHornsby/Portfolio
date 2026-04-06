@@ -1,0 +1,17 @@
+<ameperf>
+   <header run_analysis="true" doc_version="1">
+      <events_desc separator=";">
+         <event_desc id="SC">
+            <property index="1" key="time" type="double"/>
+            <property index="2" key="var_id_counts" type="string"/>
+         </event_desc>
+         <event_desc id="DISC">
+            <property index="1" key="time" type="double"/>
+            <property index="2" key="submodelname_counts" type="string"/>
+         </event_desc>
+      </events_desc>
+   </header>
+SC;000000.00000000000000e+00;
+SC;000001.00000000000000e+00;3,14 5,220 
+DISC;000001.00000000000000e+00;TFVORF0-1,2 
+</ameperf>

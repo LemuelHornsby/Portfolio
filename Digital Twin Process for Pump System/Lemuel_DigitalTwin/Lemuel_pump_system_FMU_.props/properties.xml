@@ -1,0 +1,133 @@
+<properties xmlns="amesim-property-instances" version="1">
+ <property id="id0" name="@special:model_history" sticker="" target="model:">
+  <struct/>
+ </property>
+ <property id="id5" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:piecewiselinear_2">
+  <struct>
+   <attribute name="handle_3e9b32de">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">piecewise linear designer</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libsig/utils/SIGPiecewiseLinearDesigner_app/SIGPiecewiseLinearDesigner.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_95972</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">51d107d712e6848c773832d20737cbe40cc7be32</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">4</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id6" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:pidtune">
+  <struct>
+   <attribute name="handle_771f6ad1">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">PID Tuner</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp ${library_node}/utils/CTR_xPIDtuner_app/CTR_xPIDtuner.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_dYVbcT</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">ac770536395f14d8342ff823751dbf9cc23b827b</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">0</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+   <attribute name="handle_2aa19bf3">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id2</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">PID Plot</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp ${library_node}/utils/CTR_xPIDplot_app/CTR_xPIDplot.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">4c129b204039431eeabffce6f4f701e02a9db942</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">0</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
+  <struct/>
+ </property>
+ <property id="id2" name="@special:prepost_tools_document_animations" target="model:">
+  <struct/>
+ </property>
+ <property id="id3" name="@special:prepost_tools_document_dashboards" target="model:">
+  <struct/>
+ </property>
+</properties>
